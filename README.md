@@ -13,15 +13,25 @@ Manual for GTFO Data blocks
 
 ## GameData_ArchetypeDataBlock_bin
 
-List Headers //unused
+List
+Headers
+//unused
 
-List Blocks //Contains display text and weapon settings such as damage and shot types
+List
+Blocks
+//Contains display text and weapon settings such as damage and shot types
 
-String PublicName //Name of weapon, displayed in loadout selection
+String
+PublicName
+//Name of weapon, displayed in loadout selection
 
-String Description //Description of weapon, displayed in loadout selection
+String
+Description
+//Description of weapon, displayed in loadout selection
 
-eWeaponFireMode FireMode //Determines how the weapon or sentry will shoot
+eWeaponFireMode
+FireMode
+//Determines how the weapon or sentry will shoot
 - 0 - Semi
 - 1 - Burst
 - 2 - Auto
@@ -31,41 +41,75 @@ eWeaponFireMode FireMode //Determines how the weapon or sentry will shoot
 - 6 - SentryGunBurst
 - 7 - SentryGunShotgunSemi
 
-UInt32 RecoilDataID //pulls recoil settings from GameData_PlayerDataBlock_bin.json
+UInt32
+RecoilDataID
+//pulls recoil settings from GameData_PlayerDataBlock_bin.json
 
-Single Damage //Base damage of weapon per bullet
+Single
+Damage
+//Base damage of weapon per bullet
 
-Vector2 DamageFalloff //When damage should weaken based on distance. 100 units is the raycast limit
+Vector2
+DamageFalloff
+//When damage should weaken based on distance. 100 units is the raycast limit
 - x //Start of falloff
 - y //End of falloff
 
-Single StaggerDamageMulti //Multiplies stagger dealt to an enemy
+Single
+StaggerDamageMulti
+//Multiplies stagger dealt to an enemy
 
-Single PrecisionDamageMulti //Multiplies damage done to an enemies weakspot, such as the head. Not to be mistaken with the rear of an enemy. Charger variants do not have weakspots
+Single
+PrecisionDamageMulti
+//Multiplies damage done to an enemies weakspot, such as the head. Not to be mistaken with the rear of an enemy. Charger variants do not have weakspots
 
-Int32 DefaultClipSize //The amount of shots a weapon has in a clip before having to reload
+Int32
+DefaultClipSize
+//The amount of shots a weapon has in a clip before having to reload
 
-Single DefaultReloadTime //Time it takes to reload
+Single
+DefaultReloadTime
+//Time it takes to reload
 
-Single CostOfBullet //Calculates reserve ammo based on settings in GameData_PlayerDataBlock_bin.json (expand this)
+Single
+CostOfBullet
+//Calculates reserve ammo based on settings in GameData_PlayerDataBlock_bin.json (expand this)
 
-Single ShotDelay //Time between shots
+Single
+ShotDelay
+//Time between shots
 
-Boolean PiercingBullets //Should a bullet pierce enemies? A bullet can pierce an enemy only once
+Boolean
+PiercingBullets
+//Should a bullet pierce enemies? A bullet can pierce an enemy only once
 
-Int32 PiercingDamageCountLimit //How many enemies to pierce. Maximum of 5. The first enemy hit will count as a pierce, set greater than 1 for it's intended effect.
+Int32
+PiercingDamageCountLimit
+//How many enemies to pierce. Maximum of 5. The first enemy hit will count as a pierce, set greater than 1 for it's intended effect.
 
-Single HipFireSpread //Adjust cone of bullet spread when hip firing
+Single
+HipFireSpread
+//Adjust cone of bullet spread when hip firing
 
-Singlee AimSpread //Adjust cone of bullet spread when using Aim Down Sights
+Singlee
+AimSpread
+//Adjust cone of bullet spread when using Aim Down Sights
 
-Single EquipTransitionTime //Total time it takes to pull a weapon out when switching
+Single
+EquipTransitionTime
+//Total time it takes to pull a weapon out when switching
 
-WeaponAnimSequenceItem EquipSequence //Contains TriggerTime, Type and StringData
+WeaponAnimSequenceItem
+EquipSequence
+//Contains TriggerTime, Type and StringData
 
-Single TriggerTime //(expand this)
+Single
+TriggerTime
+//(expand this)
 
-eWeaponAnimSequenceItemType Type //(expand this)
+eWeaponAnimSequenceItemType
+Type
+//(expand this)
 - 0 - StockAnim
 - 1 - RightHandAnim
 - 2 - WeaponMovementAnim
@@ -77,15 +121,25 @@ eWeaponAnimSequenceItemType Type //(expand this)
 - 8 - DoUpdateAmmo
 - 9 - Empty
 
-String StringData //(expand this)
+String
+StringData
+//(expand this)
 
-Single AimTransitionTime //Total time it takes to Aim Down Sights
+Single
+AimTransitionTime
+//Total time it takes to Aim Down Sights
 
-WeaponAnimSequeenceItem AimSequence //Contains TriggerTime and Type
+WeaponAnimSequeenceItem
+AimSequence
+//Contains TriggerTime and Type
 
-Single TriggerTime //(expand this)
+Single
+TriggerTime
+//(expand this)
 
-eWeaponAnimSequenceItemType Type //(expand this)
+eWeaponAnimSequenceItemType
+Type
+//(expand this)
 - 0 - StockAnim
 - 1 - RightHandAnim
 - 2 - WeaponMovementAnim
@@ -97,152 +151,274 @@ eWeaponAnimSequenceItemType Type //(expand this)
 - 8 - DoUpdateAmmo
 - 9 - Empty
 
-Single BurstDelay //How long to charge until shooting
+Single
+BurstDelay
+//How long to charge until shooting
 
-Int32 BurstShotCount //How many bullets are shot in sequence
+Int32
+BurstShotCount
+//How many bullets are shot in sequence
 
-Int32 ShotgunBulletCount //How many bullets are shot ALL AT ONCE
+Int32
+ShotgunBulletCount
+//How many bullets are shot ALL AT ONCE
 
-Int32 ShotgunConeSize //Adjust maximum cone size of bullet spread
+Int32
+ShotgunConeSize
+//Adjust maximum cone size of bullet spread
 
-Int32 ShotgunBulletSpread //How tight do the bullets stay together
+Int32
+ShotgunBulletSpread
+//How tight do the bullets stay together
 
-Single SpecialChargeupTime //(expand this)
+Single
+SpecialChargeupTime
+//(expand this)
 
-Single SpecialCooldownTime //(expand this)
+Single
+SpecialCooldownTime
+//(expand this)
 
-Single SpecialSemiBurstCountTimeout //(expand this)
+Single SpecialSemiBurstCountTimeout
+//(expand this)
 
-Single Sentry_StartFireDelay //How long it takes until the sentry begins shooting a target
+Single
+Sentry_StartFireDelay
+//How long it takes until the sentry begins shooting a target
 
-Single Sentry_RotationSpeed //How quickly a sentry will rotate towards a target
+Single
+Sentry_RotationSpeed
+//How quickly a sentry will rotate towards a target
 
-Single Sentry_DetectionMaxRange //How far away a sentry will aim at a target
+Single
+Sentry_DetectionMaxRange
+//How far away a sentry will aim at a target
 
-Single Sentry_DetectionMaxAngle //How much the sentry will rotate to get a target
+Single
+Sentry_DetectionMaxAngle
+//How much the sentry will rotate to get a target
 
-Boolean Sentry_FireTowardsTargetInsteadOfForward //(expand this)
+Boolean
+Sentry_FireTowardsTargetInsteadOfForward
+//(expand this)
 
-String name //internal name, not displayed anywhere
+String
+name
+//internal name, not displayed anywhere
 
-Boolean internalEnabled //Is this usable by the client?
+Boolean
+internalEnabled
+//Is this usable by the client?
 
-UInt32 persistentID //Used in GameData_PlayerOfflineGearDataBlock_bin.json
+UInt32
+persistentID
+//Used in GameData_PlayerOfflineGearDataBlock_bin.json
 
 ## GameData_BigPickupDistributionDataBlock_bin
 
-List Headers //Unused
+List
+Headers
+//Unused
 
-List Blocks //Contains settings for key items such as batteries, turbines and Babies
+List
+Blocks
+//Contains settings for key items such as batteries, turbines and Babies
 
-Int32 SpawnsPerZone //How many of these will spawn in a zone
+Int32
+SpawnsPerZone
+//How many of these will spawn in a zone
 
-BigPickupSpawnData SpawnData //Contains ItemID and Weight
+BigPickupSpawnData
+SpawnData
+//Contains ItemID and Weight
 
-UInt32 ItemID //(expand this)
+UInt32
+ItemID
+//(expand this)
 
-Single Weight //(expand this)
+Single
+Weight
+//(expand this)
 
-String name //internal name, not displayed anywhere
+String
+name
+//internal name, not displayed anywhere
 
-Boolean internalEnabled //Is this usable by the client?
+Boolean
+internalEnabled
+//Is this usable by the client?
 
-UInt32 persistentID //(expand this)
+UInt32
+persistentID
+//(expand this)
 
 ## GameData_ChainedPuzzleDataBlock_bin
 
-List Headers //Unused
+List
+Headers
+//Unused
 
-List Blocks //Contains alarm settings such as what scans to use and how enemies spawn
+List
+Blocks//Contains alarm settings such as what scans to use and how enemies spawn
 
-String PublicAlarmName //Text displayed when looking at doors typically
+String
+PublicAlarmName
+//Text displayed when looking at doors typically
 
-Boolean TriggerAlarmOnActivate //Should enemies spawn
+Boolean
+TriggerAlarmOnActivate
+//Should enemies spawn
 
-UInt32 SurvivalWaveSettings //persistentID from GameData_SurvivalWaveSettingsDataBlock_bin.json
+UInt32
+SurvivalWaveSettings
+//persistentID from GameData_SurvivalWaveSettingsDataBlock_bin.json
 
-UInt32 SurvivalWavePopulation //persistentID from GameData_SurvivalWavePopulationDataBlock_bin.json
+UInt32
+SurvivalWavePopulation
+//persistentID from GameData_SurvivalWavePopulationDataBlock_bin.json
 
-Boolean DisableSurvivalWaveOnComplete //Should enemies stop spawning
+Boolean
+DisableSurvivalWaveOnComplete
+//Should enemies stop spawning
 
-Boolean UseRandomPositions //(expand this)
+Boolean
+UseRandomPositions
+//(expand this)
 
-Single WantedDistanceFromStartPos //How far away the inital scan is
+Single
+WantedDistanceFromStartPos
+//How far away the inital scan is
 
-Single WantedDistanceBetweenPuzzleComponents //How far to spread scans out
+Single
+WantedDistanceBetweenPuzzleComponents
+//How far to spread scans out
 
-ChainedPuzzleComponent ChainedPuzzle //Contains PuzzleType
+ChainedPuzzleComponent
+ChainedPuzzle
+//Contains PuzzleType
 
-UInt32 PuzzleType //persistentID from GameData_ChainedPuzzleTypeDataBlock_bin.json
+UInt32
+PuzzleType
+//persistentID from GameData_ChainedPuzzleTypeDataBlock_bin.json
 
-Boolean OnlyShowHUDWhenPlayerIsClose //(expand this)
+Boolean
+OnlyShowHUDWhenPlayerIsClose
+//(expand this)
 
-UInt32 AlarmSoundStart //(expand this) Pulls from "GTFO\GTFO_Data\StreamingAssets\GeneratedSoundBanks\Wwise_IDs.cs"
+UInt32
+AlarmSoundStart
+//(expand this) Pulls from "GTFO\GTFO_Data\StreamingAssets\GeneratedSoundBanks\Wwise_IDs.cs"
 
-UInt32 AlarmSoundStop //(expand this) Pulls from "GTFO\GTFO_Data\StreamingAssets\GeneratedSoundBanks\Wwise_IDs.cs"
+UInt32
+AlarmSoundStop
+//(expand this) Pulls from "GTFO\GTFO_Data\StreamingAssets\GeneratedSoundBanks\Wwise_IDs.cs"
 
-String name //internal name, not displayed anywhere
+String
+name
+//internal name, not displayed anywhere
 
-Boolean internalEnabled //Is this usable by the client
+Boolean
+internalEnabled
+//Is this usable by the client?
 
-UInt32 persistentID //(expand this)
+UInt32
+persistentID
+//(expand this)
 
 ## GameData_ChainedPuzzleTypeDataBlock_bin
 
-List Headers //Unused
+List
+Headers
+//Unused
 
-List Blocks //Contains scan types for alarms
+List
+Blocks
+//Contains scan types for alarms
 
-String Prefab //Pulls from your mom
+String
+Prefab
+//Pulls from your mom
 
-String name //internal name, not displayed anywhere
+String
+name
+//internal name, not displayed anywhere
 
-UInt32 persistentID //Used in GameData_ChainedPuzzleDataBlock_bin.json
+UInt32
+persistentID
+//Used in GameData_ChainedPuzzleDataBlock_bin.json
 
 ## GameData_CommodityDataBlock_bin
 
-List Headers //Unused
+List
+Headers
+//Unused
 
-List Blocks //Currently unused
+List
+Blocks
+//Currently unused
 
-String PublicName //(expand this)
+String
+PublicName
+//(expand this)
 
-eCommodityType Type //(expand this)
+eCommodityType
+Type
+//(expand this)
 - 0 - LiquidSample
 - 1 - Data
 - 8 - Artifact
 - 9 - PhysicalSample
 
-eCommodityPackSize PackSize //(expand this)
+eCommodityPackSize
+PackSize
+//(expand this)
 - 3 - Small
 - 4 - Medium
 - 5 - Large
 
-UInt32 Item //(expand this)
+UInt32
+Item
+//(expand this)
 
-ePlayfabCurrency PlayfabCurrency //(expand this)
+ePlayfabCurrency
+PlayfabCurrency
+//(expand this)
 - 7 - CurrA
 - 8 - CurrB
 - 9 - CurrC
 
-Int32 PlayfabCurrencyValue //(expand this)
+Int32
+PlayfabCurrencyValue
+//(expand this)
 
-String name //internal name, not displayed anywhere
+String
+name
+//internal name, not displayed anywhere
 
-UInt32 persistentID //(expand this)
+UInt32 
+PersistentID
+//(expand this)
 
 ## GameData_ComplexResourceSetDataBlock_bin
 
-List Headers //Unused
+List
+Headers
+//Unused
 
-List Blocks //(expand this)
+List
+Blocks
+//(expand this)
 
-Complex ComplexType //(expand this)
+Complex
+ComplexType
+//(expand this)
 - 5 - Mining
 - 6 - Service
 - 7 - Tech
 
-SubComplex PrimareSubComplexUsed //(expand this)
+SubComplex
+PrimareSubComplexUsed
+//(expand this)
 - 0 - Refinery
 - 1 - Storage
 - 2 - DataCenter
@@ -254,7 +430,9 @@ SubComplex PrimareSubComplexUsed //(expand this)
 - 8 - Tech_Reactor
 - 9 - DigSite
 
-AssetBundleName BundleName //(expand this)
+AssetBundleName
+BundleName
+//(expand this)
 - 2 - None
 - 3 - Complex_Shared
 - 4 - Complex_Mining
@@ -280,28 +458,46 @@ AssetBundleName BundleName //(expand this)
 - 24 - Gear_Material = 200
 - 25 - Enemies = 300
 
-LevelGenConfig LevelGenConfig //Contains GridSize, CellDimension, AltitudeOffset, TransitionDirection and LevelProgression
+LevelGenConfig
+LevelGenConfig
+//Contains GridSize, CellDimension, AltitudeOffset, TransitionDirection and LevelProgression
 
-Int32 GridSize //(expand this)
+Int32
+GridSize
+//(expand this)
 
-Single CellDimension //(expand this)
+Single
+CellDimension
+//(expand this)
 
-Single AltitudeOffset //(expand this)
+Single
+AltitudeOffset
+//(expand this)
 
-LG_FloorTransitionDirection TransitionDirection //(expand this)
+LG_FloorTransitionDirection
+TransitionDirection
+//(expand this)
 - 5 - FloorUp
 - 6 - FloorDown
 
-LG_LevelProgression LevelProgression //(expand this)
+LG_LevelProgression
+LevelProgression
+//(expand this)
 - 2 - StartLevel
 - 3 - MidLevel
 - 4 - EndLevel
 
-ResourceData ResourceData //Contains Prefab, SubComplex and Shard
+ResourceData
+ResourceData
+//Contains Prefab, SubComplex and Shard
 
-String Prefab //(expand this)
+String
+Prefab
+//(expand this)
 
-SubComplex SubComplex //(expand this)
+SubComplex
+SubComplex
+//(expand this)
 - 0 - Refinery
 - 1 - Storage
 - 2 - DataCenter
@@ -313,7 +509,9 @@ SubComplex SubComplex //(expand this)
 - 8 - Tech_Reactor
 - 9 - DigSite
 
-AssetBundleShard Shard //(expand this)
+AssetBundleShard
+Shard
+//(expand this)
 - 27 - S1
 - 28 - S2
 - 29 - S3
@@ -335,10 +533,16 @@ AssetBundleShard Shard //(expand this)
 - 45 - S19
 - 46 - S20
 
-String name //internal name, not displayed anywhere
+String
+name
+//internal name, not displayed anywhere
 
-Boolean internalEnabled //Is this usable by the client?
+Boolean
+internalEnabled
+//Is this usable by the client?
 
-UInt32 persistentID //(expand this)
+UInt32
+persistentID
+//(expand this)
 
 ## GameData_ConsumableDistributionDataBlock_bin
